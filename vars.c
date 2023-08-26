@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * is_chain - Tests if the current character in the buffer is a chain delimiter.
+ * is_chain - Tests if the current character in
+ * the buffer is a chain delimiter.
  * @info: The parameter structure.
  * @buf: The character buffer.
  * @p: Address of the current position in 'buf'.
