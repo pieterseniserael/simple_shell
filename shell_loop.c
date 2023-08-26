@@ -3,13 +3,9 @@
 /**
  * hsh - Main loop of the shell program.
  * @info: Pointer to the parameter and return information structure.
- * @av: Argument vector from the main function.
+ * @av: Pointer to the parameter and return information structure.
  *
- * This function serves as the primary loop for the shell program. It handles
- * user input, processes commands (both built-in and external), and manages
- * the program's execution flow.
- *
- * Returns: 0 on success, 1 on error, or an error code.
+ * Return: 0 on success, 1 on error, or error code.
  */
 int hsh(info_t *info, char **av)
 {
@@ -54,9 +50,9 @@ int hsh(info_t *info, char **av)
  * This function searches for a built-in command and executes it if found.
  *
  * Return: -1 if the built-in command is not found,
- *         0 if the built-in command is executed successfully,
- *         1 if the built-in command is found but not successful,
- *         2 if the built-in command signals an exit.
+ *          0 if the built-in command is executed successfully,
+ *          1 if the built-in command is found but not successful,
+ *          2 if the built-in command signals an exit.
  */
 int find_builtin(info_t *info)
 {
@@ -87,8 +83,8 @@ int find_builtin(info_t *info)
  * find_cmd - Locates a command in the system's PATH.
  * @info: Pointer to the parameter and return information structure.
  *
- * This function searches for an external command
- * in the system's PATH directories.
+ * This function searches for an external command in the
+ * system's PATH directories.
  *
  * Return: void
  */
@@ -136,7 +132,6 @@ void find_cmd(info_t *info)
  *
  * Return: void
  */
-
 void fork_cmd(info_t *info)
 {
 	pid_t child_pid;
@@ -170,3 +165,4 @@ void fork_cmd(info_t *info)
 		}
 	}
 }
+
