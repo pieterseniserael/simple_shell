@@ -87,7 +87,8 @@ int find_builtin(info_t *info)
  * find_cmd - Locates a command in the system's PATH.
  * @info: Pointer to the parameter and return information structure.
  *
- * This function searches for an external command in the system's PATH directories.
+ * This function searches for an external command
+ * in the system's PATH directories.
  *
  * Return: void
  */
